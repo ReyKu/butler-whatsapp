@@ -1,4 +1,5 @@
-import makeWASocket, { DisconnectReason, useMultiFileAuthState } from '@whiskeysockets/baileys'
+import pkg from '@whiskeysockets/baileys'
+const { default: makeWASocket, DisconnectReason, useMultiFileAuthState } = pkg
 import { Boom } from '@hapi/boom'
 import express from 'express'
 import fetch from 'node-fetch'
